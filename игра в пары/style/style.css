@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h {
+    margin-bottom: 0;
+}
+
+.h2 {
+    margin-top: 0;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(166, 202, 173);
+    border-radius: 15px;
+}
+
+.divCards {
+    align-items: center;
+    min-width: 200px;
+    min-height: 300px;
+    padding: 15px auto;
+    background-color: rgb(5, 27, 155);
+    border-radius: 15px;
+}
+.victory {
+
+    height: 150px;
+    font-size: 35px;
+    color: crimson;
+    border-radius: 10px;
+}
+
+.spanCards {
+    display: inline-block;
+    width: 100px;
+    height: 120px;
+    margin: 5%;
+    font-size: 0px;
+    background-color: rgb(222, 222, 236);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.white {
+    width: 100px;
+    height: 120px;
+    background-color: rgb(67, 11, 123);
+    pointer-events: none;
+}
+
+.card1 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht1.jpg");
+    background-size: cover;
+}
+
+.card2 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht2.jpg");
+    background-size: cover;
+}
+
+.card3 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht3.jpg");
+    background-size: cover;
+}
+
+.card4 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht4.png");
+    background-size: cover;
+}
+
+.card5 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht5.jpg");
+    background-size: cover;
+}
+
+.card6 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht6.jpg");
+    background-size: cover;
+}
+
+.card7 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht7.png");
+    background-size: cover;
+}
+
+.card8 {
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/yacht8.jpg");
+    background-size: cover;
+}
+
+.btn {
+    display: flex;
+    padding: auto;
+    padding: 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    color: crimson;
+}
+
+.btnlooser {
+    column-count: auto;
+    width: 100%;
+    height: 150px;
+    font-size: 35px;
+    color: crimson;
+    border-radius: 10px;
+}
+
+.input-hidden {
+    display: none;
+}
+
+.input {
+    display: block;
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    color: crimson;
+}
+
+.watch {
+    width: 60px;
+    height: 30px;
+    color: crimson;
+}
+.timer {
+    font-size: large;
+    color: crimson;
+}

@@ -1,0 +1,790 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	border-bottom: #3f2aff solid 1px;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+@font-face {
+	font-family: 'Muller Thin DEMO';
+	src: url('fonts/MullerThinDEMO.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('fonts/MullerThinDEMO.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MullerThinDEMO.woff') format('woff'),
+		url('fonts/MullerThinDEMO.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller ExtraBold DEMO';
+	src: url('fonts/MullerExtraBoldDEMO.eot');
+	src: local('Muller ExtraBold DEMO'), local('MullerExtraBoldDEMO'),
+		url('fonts/MullerExtraBoldDEMO.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MullerExtraBoldDEMO.woff') format('woff'),
+		url('fonts/MullerExtraBoldDEMO.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+body {
+	font-family: Muller Thin DEMO, Arial, Verdana, sans-serif;
+}
+:root {
+	--yellow1: #F0BF5F;
+	--yellow2: #cc9933;
+	--yellow3: #a47312;
+	--white: #FFFFFF;
+}
+.main-content {
+	display: flex;
+
+	flex-direction: column;
+  
+	align-items: center;
+  
+	justify-content: center;
+  
+	min-height: 100vh;
+  
+	color: #fff;
+  
+	background-color: #070217;
+	font-family:Arial, Verdana, sans-serif ;
+}
+.background {
+	background-color: #f1f1f1;
+}
+.flex {
+	display: flex;
+}
+li {
+	list-style-type: none;
+	padding: 0px;	
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+p {
+	color: #000;
+	font-family: Muller, Arial;
+    font-size: 16px;
+    line-height: 32px;
+    line-height: 200%;
+}
+a {
+	text-decoration: none;
+	border-bottom: none;	
+}
+.main {
+	margin: 0 auto;
+	padding: 80px 0;
+	width: 1170px;
+	background: #E5E5E5;
+}
+h2 {
+	margin-left: 40px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #333333;
+}
+.hider-logo {
+	margin-left: 0px;
+	
+	background: var(--yellow1);
+	border-radius: 15px;
+	vertical-align: middle;
+}
+.tel-logo {
+	display: inline-block;
+	margin-left: 36px;
+	font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+	color: #666666;
+	transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.tel-logo:focus {
+	color: var(--yellow1);
+}
+.tel-logo:hover {
+	color: var(--yellow2);
+	border: 1px solid #CC9933;
+}
+.tel-logo:active {
+	color: var(--yellow3);
+	border: none;
+}
+.arrow-logo {
+	display: inline-block;
+    margin-left: 568px;
+	color: var(--yellow2);
+	fill: var(--yellow2);
+	transition: color 0.5s ease-in-out, border 0.5s ease-in-out, fill 0.5s ease-in-out;
+}
+.arrow-logo:focus {
+	color: var(--yellow1);
+	fill: var(--yellow1);
+}
+.arrow-logo:hover {
+	color: var(--yellow2);
+	border: 1px solid #CC9933;
+	fill: var(--yellow2);
+}
+.arrow-logo:active {
+	color: var(--yellow3);
+	border: none;
+	fill: var(--yellow3);
+}
+       /*меню*/
+	
+.container-nav {
+	margin-top: 30px;
+	width: 100%;
+	height: 70px;
+	background: var(--white);
+	border-radius: 15px;
+	}
+.hider-list {
+	justify-content: space-evenly;
+    align-items: center;
+	width: 100%;
+}
+.header-link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: #666666;
+	transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.header-link:focus {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--yellow2);
+}
+.header-link:hover {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--yellow2);
+	border: 1px solid #CC9933;
+}
+.header-link:active {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--yellow3);
+	border: none;
+}
+.btn {
+	justify-content: center;
+	align-items: center;
+	padding: 10px 25px;
+	min-width: 120px;
+    min-height: 35px;
+	color: var(--yellow1);
+	background-color: var(--white);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	
+	border: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: var(--yellow2);
+	cursor: pointer;
+	transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out,background-color 0.5s ease-in-out;
+}
+.btn:focus {
+	outline: none;
+	background-color: var(--yellow2);
+	border-color: var(--yellow2);
+	color: var(--white);
+}
+.btn:hover {
+	outline: none;
+	background-color: var(--yellow2);
+	border-color: var(--yellow2);
+	color: var(--white);
+	
+}
+.btn:active {
+	outline: none;
+	background-color: var(--yellow3);
+	border-color: var(--yellow3);
+	color: var(--white);
+}
+.btn2 {
+	width: 170px;
+}
+          /*спецпредложения*/
+.card-sp {
+	flex-direction: column;
+}		  
+.sp-card {
+	flex-direction: column;
+	width: 573px;
+	min-height: 258px;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/maldives.jpg.png");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+.sp-card2 {
+	flex-direction: column;
+	margin-top: 24px;
+	width: 573px;
+	min-height: 258px;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/krit.jpg.png");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+}
+.sp-card-lux {
+	width: 573px;
+	min-height: 540px;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/lux.jpg.png");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	float: right;
+}
+.heading-sp	{
+	margin: 0;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 40px;
+	color: var(--white);
+	padding-left: 45px;
+}
+.heading-sp-lux {
+	margin: 0;
+	margin-top: 212px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 60px;
+	color:var(--white);
+	padding-left: 45px;
+}	
+.price-sp {
+	margin: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	color: var(--white);
+	margin-left: 45px;
+	margin-bottom: 15px;
+}  
+.price-sp-lux {
+	margin: 0;
+	margin-bottom: 47px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	color: var(--white);
+	margin-left: 45px;
+}
+.arrow-sp {
+	stroke: var(--yellow2);
+	flex-direction: row;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: var(--yellow1);
+    margin-left: 45px;
+	margin-bottom: 0;
+	transition: color 0.5s ease-in-out, stroke 0.5s ease-in-out;
+}
+.arrow-sp:focus {
+	color: var(--yellow1);
+	stroke: var(--yellow1);
+}
+.arrow-sp:hover {
+	color: var(--yellow2);
+	stroke: var(--yellow2);
+}
+.arrow-sp:active {
+	color: var(--yellow3);
+	stroke: var(--yellow3);
+}
+              /*услуги*/
+.servis-card {
+	/*flex-basis: 24%;*/
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*background-color: #E5E5E5;*/
+	overflow: hidden;
+}
+.s-card {
+	flex-basis: 49%;
+	min-height: 165px;
+	margin-bottom: 24px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.servis-img1 {
+	display: inline-block;
+	margin-top: 0;
+	width: 573px;
+	height: 165px;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/glass.jpg");
+	background-repeat: no-repeat;
+}
+.servis-img2 {
+	display: inline-block;
+	width: 573px;
+	height: 165px;
+	margin-top: 0;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/office.jpg");
+	background-repeat: no-repeat;
+}
+.servis-img3 {
+	display: inline-block;
+	width: 573px;
+	height: 165px;
+	margin-top: 0;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/sweem.jpg");
+	background-repeat: no-repeat;
+}
+.servis-img4 {
+	display: inline-block;
+	width: 573px;
+	height: 165px;
+	margin-top: 0;
+	background-image: linear-gradient(180deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)), url("../jpg-lagoona/auto.jpg");
+	background-repeat: no-repeat;
+}
+.servis-items {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+	color: #000;
+	margin-left: 45px;
+	margin-bottom: 35px;
+}
+       /*преимущества*/
+.advant-card {
+	flex-basis: 25%;
+	/*justify-content: space-between;*/
+	
+	flex-wrap: wrap;
+	font-family: "Muller";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+}
+.advant-container {
+	flex-basis: 23%;
+	display: inline-block;
+	/*width: 276px;*/
+	min-height: 276px;
+	background-color: var(--white);
+	border-radius: 15px;
+	margin-bottom: 20px;
+
+	margin-right: 31px;
+
+	padding-left: 45px;
+	padding-bottom: 32px;
+} 
+.advant-container:nth-child(4n) {
+	margin-right: 0;
+}
+.bathtub {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/bathtub.svg");
+	background-repeat: no-repeat;
+}
+.hanger {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/hanger.svg");
+	background-repeat: no-repeat;	
+}
+.heating {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/heating.svg");
+	background-repeat: no-repeat;	
+}
+.hotel-key {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/hotel-key.svg");
+	background-repeat: no-repeat;
+}
+.parking {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/parking.svg");
+	background-repeat: no-repeat;
+}
+.reception {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/reception.svg");
+	background-repeat: no-repeat;
+}
+.security-box {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/security-box.svg");
+	background-repeat: no-repeat;
+}
+.swimming-pool {
+	display: block;
+	width: 64px;
+	height: 66px;
+	background-image: url("../jpg-lagoona/swimming-pool.svg");
+	background-repeat: no-repeat;
+}
+     /*размещение*/
+
+.img-otel {
+	flex-basis: 32%;
+	/*width: 374px;*/
+	min-height: 440px;
+	background-color: var(--white);
+	border-radius: 15px;
+	margin-bottom: 25px;
+	/*margin-right: 24px;*/
+	overflow: hidden;
+}
+.otel-item {
+	justify-content: space-between;
+	/*flex-basis: 33%;*/
+    flex-wrap: wrap;
+}
+.otel-container-item {
+	display: inline-block;
+	/*min-width: 374px;*/
+	min-height: 217px;
+	margin-left: 45px;
+	margin-top: 5px;
+}
+.otel-container1 {
+	position: relative;
+	
+	height: 440px;
+	border-radius: 25px;
+	background-image: url(../jpg-lagoona/oll_variant.jpg);
+	background-repeat: no-repeat;
+}
+.all-variant {
+	display: inherit;
+	justify-content: center;
+	align-items: center;
+}
+.detail-otel {
+	display: inherit;
+	display: inline-block;
+	margin-left: 54px;
+	margin-top: 373px;
+	color: var(--white);
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+}
+.arrow-sp1 {
+	display: inline-block;
+	margin-left: 5px;
+}
+.otel-detail {
+	justify-items: center;
+}
+.prise-otels {
+	display: inline;
+	margin-left: 4px;
+}
+.town {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: #999999;
+}
+.star_yellow1 {
+	display: inline;
+	margin-left: 52px;
+}
+.star_yellow2 {
+	display: inline;
+	margin-left: 6px;
+}
+      /*хочу тур*/
+
+.tur {
+	display: block;
+	height: 256px;
+	padding-top: 20px;
+	background-color: #E9E9E9;
+	border-radius: 15px;
+}
+.tur-item {
+    justify-items: center;
+	align-items: center;
+	width: 1080px;
+    min-height: 106px;
+	border-radius: 15px;
+	margin-left: 45px;
+	margin-right: 45px;
+	padding-left: 28px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: var(--white);
+}
+.form-ht {
+	margin-left: 15px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+}
+.form-ht-form {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	
+}
+.field {
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+select {
+	padding: 0px;
+	border: 0;
+	margin-left: 15px;
+}
+input {
+	padding: 0px;
+	border: 0;
+	margin-left: 15px;
+}
+/*.arrow-ht {
+	background-image: url("../jpg-lagoona/arrow-ht.svg");
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 6px;
+}*/
+       /*контакты*/
+
+
+.contact {
+	justify-content: space-between;
+	width: 1170px;
+	height: 618px;
+	background-color: var(--white);
+	border-radius: 15px;
+	padding-left: 45px;
+}
+.reception1 {
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 45px;
+}
+.adress {
+    width: 415px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	vertical-align: top;
+	border-bottom: 1px solid #E9E9E9;
+	margin-bottom: 15px;
+}
+.reception-item {
+	display: inline-block;
+	justify-content: space-between;
+	width: 230px; 
+}
+.contact-adress {
+	display: inline-block;
+	width: 200px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	color: #000;	
+}
+.reception-mail {
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--yellow2);
+	transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.reception-mail:focus {
+	color: var(--yellow1);
+}
+.reception-mail:hover {
+	color: var(--yellow2);
+	border: 1px solid #CC9933;
+}
+.reception-mail:active {
+	color: var(--yellow3);
+	border: none;
+}
+.reception-adress {
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	vertical-align: text-top;
+}
+.reception-mail-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	vertical-align: text-top;
+}
+.btn-contact {
+	margin-top: 49px;
+	padding: 25px;
+}
+.reception-img {
+	width: 653px;
+	height: 528px;
+	margin-top: 45px;
+	margin-right: 45px;
+}
+    /*footer*/
+.footer {
+	justify-content: space-between;
+	width: 1170px;
+	min-height: 341px;
+	margin-top: 45px;
+	background-color: #333333;
+	border-radius: 15px;
+}
+.footer-left {
+	display: inline-block;
+	margin-left: 45px;
+	margin-top: 45px;
+    width: 400px;
+}
+.footer-center {
+    align-items: flex-start;
+	display: inline-block;
+    margin-top: 40px;
+	margin-right: 45px;
+    width: 450px;
+	height: 150px;
+}
+
+.footer-item {
+	padding-bottom: 37px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 190%;
+	color: var(--white);
+}
+.footer-item-center {
+	z-index: 1;
+	padding-top: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 190%;
+	color: var(--white);
+}
+.footer-vk {
+    display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-top: 45px;
+	margin-right: 45px;
+}
+.footer-solar {
+	position: absolute;
+	z-index: 5;
+	width: 250px;
+	height: 250px;
+	margin-top: 126px;
+    margin-left: 720px;
+	background-image: url("../jpg-lagoona/footer-solar.svg");
+	background-repeat: no-repeat;
+}
+.footer-yellow {
+	color: var(--yellow2);
+}
+.footer-cc {
+	margin-bottom: 33px;
+}
+.vk {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 33px;
+	fill: #999999;
+    /*background-image: url("../jpg-lagoona/vk.svg");
+	background-repeat: no-repeat;
+	cursor: pointer;*/
+	transition: fill 0.5s ease-in-out;
+}
+.ok {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 33px;
+	fill: #999999;
+    /*background-image: url("../jpg-lagoona/ok.svg");
+	background-repeat: no-repeat;
+	cursor: pointer;*/
+	transition: fill 0.5s ease-in-out;
+}
+.sova {
+	width: 30px;
+	height: 30px;
+	fill: #999999;
+	transition: fill 0.5s ease-in-out;
+}
+.vk:focus {
+	fill: var(--yellow1);
+}
+.vk:hover {
+	fill: var(--yellow2);
+}
+.vk:active {
+	fill: var(--yellow3);
+}
+.ok:focus {
+	fill: var(--yellow1);
+}
+.ok:hover {
+	fill: var(--yellow2);
+}
+.ok:active {
+	fill: var(--yellow3);
+}
+.sova:focus {
+	fill: var(--yellow1);
+}
+.sova:hover {
+	fill: var(--yellow2);
+}
+.sova:active {
+	fill: var(--yellow3);
+}
+
+
+
+

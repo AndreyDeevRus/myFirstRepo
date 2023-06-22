@@ -1,0 +1,73 @@
+input {
+  margin-bottom: 2%;
+  padding: 5px;
+  border-radius: 5px;
+}
+td {
+  border: 1px solid #333;
+}
+button {
+  padding: 5px 12px 5px 12px;
+  color: black;
+}
+.contanier {
+  background-color: #adb7c585;
+}
+.h1 {
+  margin-left: 38%;
+  color: darkgreen;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+.form-field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.dataform {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.head-table {
+  color: rgb(105, 99, 12);
+  font-size: 40px;
+}
+.btn {
+  padding: 10px 5px 10px 5px;
+  background-color: blue;
+  border-radius: 5px;
+  color: rgb(67, 220, 20);
+  transition: all .3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(0, 255, 251);
+  color: rgb(210, 20, 220);
+}
+.btn:focus {
+  background-color: rgb(72, 255, 0);
+  color: rgb(220, 20, 163);
+}
+.btn:active {
+  outline: 3px rgb(203, 220, 20) solid;
+}
+.table {
+  width: 100%;
+}
+.table-list {
+  width: 30%;
+  padding: 10px 5px 10px 5px;
+}
+.table-heading {
+  width: 29%;
+  background-color: rgb(22, 115, 11);
+  color: #fff;
+}

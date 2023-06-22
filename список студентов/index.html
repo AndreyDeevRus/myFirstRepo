@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="main.js"></script>
+    <script defer src="validate.js"></script>
+</head>
+
+<body>
+  <!-- Этап 1. Создайте верстку элементов, которые будут статичны (неизменны).  -->
+  <div class="contanier">
+    <h1 class="h1">Студенты факультетов</h1>
+    <div>
+      <div class="form">
+          <form id="datastudent" class="dataform">
+            <label class="input"><input id="secondName" type="text" placeholder="Ввести фамилию"></label>
+            <label class="input"><input id="firstName" type="text" placeholder="Ввести имя"></label>
+            <label class="input"><input id="dadName" type="text" placeholder="Ввести отчество"></label>
+            <label class="input"><input id="faculty" type="text" placeholder="Введите факультет"></label>
+            <label class="input"><input id="birthday" type="date" placeholder="Введите дату рождения" min="1900-01-01">Дата рождения</label>
+            <label class="input"><input id="startTraning" type="text" placeholder="Введите год">Год начала обучения</label>
+            <button id="btn" class="btn" type="submit">Добавить студента</button>
+          </form>
+
+          <form id="filtr-student" class="data">
+            <p id="nowDate">Фильтровать по</p>
+            <label class="input"><input id="filtr-secondName" type="text" placeholder="ФИО"></label>
+            <label class="input"><input id="filtr-faculty" type="text" placeholder="факультету"></label>
+            <label class="input"><input id="filtr-startTraning" type="number" placeholder="году начала обучения"></label>
+            <label class="input"><input id="filtr-stopTraning" type="number" placeholder="году окончания обучения"></label>
+          </form>
+      </div>
+      <table id="inst" class="table">
+        <thead><tr><th class="head-table" colspan="4">Список студентов</th></tr></thead>
+        <tr id="rowlist">
+          <td class="table-heading"><button id="fio" onClick="refreshPage()">Фамилия Имя Отчество</button></td>
+          <td class="table-heading"><button id="fack" onClick="refreshPage()">Факультет</button></td>
+          <td class="table-heading"><button id="god" onClick="refreshPage()">Дата рождения(возраст)</button></td>
+          <td class="table-heading"><button id="kurs" onClick="refreshPage()">Годы обучения(курс)</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
